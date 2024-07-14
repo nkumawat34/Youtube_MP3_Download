@@ -4,6 +4,7 @@ import axios from 'axios';
 import { FaYoutube } from "react-icons/fa";
 import { useState } from 'react';
 import backgroundImage from '../src/background.jpg'
+import { FaHeart } from "react-icons/fa";
 function App() {
   const [url,setUrl]=useState('')
 
@@ -39,6 +40,7 @@ function App() {
      </div>
      {link?<h2 class='text-2xl'>MP3 LINK</h2>:""}{link}
      {link!=''?<div class='mt-[6vh]'><a href={link} class=' p-3 bg-cyan-300'>Download</a></div>:""}
+     <div class='mt-[290px] flex flex-row justify-center '><div class='mx-3'><FaHeart size={50} color={"red"} /></div><h3 class='font-bold italic text-2xl'>Made By Neeraj Kumawat</h3></div>
     </div>
   );
 }
